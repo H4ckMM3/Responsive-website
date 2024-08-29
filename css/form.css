@@ -1,0 +1,309 @@
+.banner-container {
+    display: none;
+}
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.banner-container .banner {
+    background-image: url(../image/Bg2.png);
+    width: 100%;
+    max-width: 1500px;
+    margin: 10px;
+    height: 619px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.banner-container .banner .form-content {
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 40%;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-image: url(../image/Bg\ form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 785px;
+    margin-left: 146px;
+}
+
+@media (max-width: 1920px){
+    .banner-container {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        display: block;
+    }
+    .banner-container {
+        padding: 0;
+    }
+
+    .banner-container .banner {
+        background-image: url(../image/8.\ Form\ \(1\)\ копия.png);
+        width: 100%;
+        height: auto;
+        min-height: 978px;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .banner-container .banner .form-content .iconca {
+        display: none;
+    }
+
+    .banner-container .banner .form-content {
+        padding: 20px 10px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        background-image: url(../image/Bg\ form\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        margin: 0;
+        max-width: 285px;
+        margin: 40px 16px;
+    }
+
+    .banner-container .banner .form-content .text-content {
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+
+
+/*****************************************************/
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container-form {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-container {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2FA729;
+    padding: 40px 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 80%; /* Занимает 80% ширины контейнера */
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Переключаемся на вертикальный layout для гибкости */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconca{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-icon {
+    width: 220px; /* Изначальный размер иконки */
+    height: auto;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем текст по горизонтали */
+    text-align: center;
+}
+
+.text-content h2 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 36px; /* Уменьшаем размер шрифта для лучшей адаптивности */
+    line-height: 1.2;
+}
+
+.text-content p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.request-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: white;
+    color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 100%; /* Кнопка занимает всю ширину */
+    max-width: 200px; /* Ограничиваем максимальную ширину кнопки */
+}
+
+.request-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Стили для экранов шириной до 1024px */
+@media (max-width: 1024px) {
+    .form-container {
+        max-width: 500px;
+        padding: 15px;
+        left: 5%;
+    }
+
+
+    .form-icon {
+        width: 120px;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .request-button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+    .form-icon-banner{
+        width: 200px;
+    }
+}
+/* Стили для экранов шириной до 1024px */
+@media (max-width: 1064px) {
+    .form-container {
+        max-width: 500px;
+        padding: 15px;
+        left: 5%;
+    }
+
+
+    .form-icon {
+        width: 120px;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .request-button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+/* Стили для экранов шириной до 768px (мобильные устройства) */
+@media (max-width: 768px) {
+    .content {
+        display: none;
+    }
+    .container {
+        padding: 10px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../image/8. Form (1)'); /* Замена фона для мобильных устройств */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .background-image {
+        display: none; /* Скрываем стандартное фоновое изображение на мобильных */
+    }
+
+    .form-container {
+        position: static;
+        transform: none;
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: transparent; /* Прозрачный фон формы */
+        box-sizing: border-box;
+    }
+
+    .form-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-icon {
+        width: 60px;
+    }
+
+    .text-content h2 {
+        font-size: 20px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .request-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

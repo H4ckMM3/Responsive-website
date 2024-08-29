@@ -1,0 +1,77 @@
+.full-width-container {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    overflow: hidden; /* Предотвращаем выход контента за пределы контейнера */
+}
+
+.manufacturers-section {
+    width: calc(100% - 40px); /* Учитываем отступы слева и справа */
+    max-width: 1200px; /* Ограничиваем максимальную ширину секции */
+    margin: 0 auto; /* Центрируем блок на странице */
+    padding: 0 20px; /* Отступы внутри блока */
+    box-sizing: border-box; /* Включаем padding в расчет ширины */
+    position: relative;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #2FA729;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.manufacturers-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logos-container {
+    overflow: hidden; /* Скрываем часть логотипов */
+    flex: 1;
+}
+
+.logos {
+    display: flex;
+    transition: transform 0.5s ease; /* Добавляем плавность движения */
+}
+
+.logos img {
+    max-height: 50px;
+    display: inline-block;
+    object-fit: contain;
+    margin-right: 30px; /* Расстояние между иконками */
+}
+
+.carousel-button {
+    background-color: #2FA729;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%; /* Вертикальное центрирование кнопки */
+    transform: translateY(-50%);
+}
+
+.left-button {
+    left: -10px; /* Позиция левой кнопки */
+}
+
+.right-button {
+    right: -10px; /* Позиция правой кнопки */
+}
+
+@media (max-width: 768px) {
+    .manufacturers-section {
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Контейнер для слайдера с отступом сверху */
+.slider-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Регулируйте этот отступ для соответствия с картинкой */
+}
+
+/* Слайдер */
+.slider {
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Слайд */
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 90%;
+    }
+}

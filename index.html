@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/servic.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/advantages.css">
+    <link rel="stylesheet" href="css/manufacturers.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="top-bar">
+                <div class="left-side">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        <span>Иркутск, Рабочего штаба 15-44</span>
+                    </div>
+                    <div class="delivery">
+                        <i class="fas fa-truck"></i> 
+                        <span>Доставка по всем регионам России</span>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="image/Logo (1).png" alt="Никсити">
+                </div>
+                <div class="right-side">
+                    <div class="contacts">
+                        <div class="phone">
+                            <a href="tel:+73952201515">+7 (3952) 20-15-15</a>
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:503735@mail.ru">503735@mail.ru</a>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Клиентам</a></li>
+              </ul>
+            </nav>
+    
+            <nav class="mobile-menu">
+              <div class="close" onclick="toggleMenu()">✖</div>
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Клиентам</a></li>
+              </ul>
+              <div class="contact">
+                <a href="tel:+73952201515">+7 (3952) 20-15-15</a><br>
+                <a href="mailto:503735@mail.ru"> 503735@mail.ru</a><br>
+                <span>Иркутск, Рабочего штаба 15-44</span><br>
+                <span>Доставка по всем регионам России</span>
+              </div>
+            </nav>
+        </header>
+    </div>
+    <!-- Пушка, гонка, слайдер -->
+     <div class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <!-- Вот так в каждый див изображение кидаешь и листаешь -->
+                <div class="slide">
+                    <img src="image/slider.png" alt="Мобильные туалетные кабины">
+                </div>
+                <div class="slide">
+                    <img src="image/slider.png" alt="Мобильные туалетные кабины">
+                </div>
+                <div class="slide">
+                    <img src="image/slider.png" alt="Мобильные туалетные кабины">
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container">
+        <div class="background">
+            <div class="products-section">
+                <h2 class="section-title">Наши товары</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3 class="text-product">Мобильные туалетные кабины</h3>
+                        </div>
+                        <img src="image/Img.png" alt="Мобильные туалетные кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Мобильные душевые кабины</h3>
+                        </div>
+                        <img src="image/Img (1).png" alt="Мобильные душевые кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Туалетные кабины</h3>
+                        </div>
+                        <img src="image/Img (2).png" alt="Туалетные кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Мобильные душевые кабины</h3>
+                        </div>
+                        <img src="image/Img (3).png" alt="Мобильные душевые кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Площадка для установки</h3>
+                        </div>
+                        <img src="image/Img (4).png" alt="Площадка для установки" class="product-image">
+                        <div class="product-arrow">
+                          
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Душевые кабины</h3>
+                        </div>
+                        <img src="image/Img (5).png" alt="Душевые кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Туалетные кабины</h3>
+                        </div>
+                        <img src="image/Img (6).png" alt="Туалетные кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Мобильные туалетные кабины</h3>
+                        </div>
+                        <img src="image/Img (7).png" alt="Мобильные туалетные кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-info">
+                            <h3>Мобильные душевые кабины</h3>
+                        </div>
+                        <img src="image/Img (8).png" alt="Мобильные душевые кабины" class="product-image">
+                        <div class="product-arrow">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container">
+        <div class="services-section">
+            <h2 class="section-service">Наши услуги</h2>
+            <div class="services-grid">
+                <!-- Верхний ряд с 4 блоками -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/icon1.png" alt="Icon 1">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-text">Аренда мобильных туалетных кабин</h3>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/icon2.png" alt="Icon 2">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-text">Обслуживание мобильных туалетных кабин</h3>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/icon3.png" alt="Icon 3">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-text">Разморозка труб специальным оборудованием</h3>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="image/icon4.png" alt="Icon 4">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-text">Мойка фасадов зданий, торговых павильонов</h3>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-- Нижний ряд с 2 блоками по центру -->
+                <div class="service-card service-card-lower">
+                    <div class="service-icon">
+                        <img src="image/icon5.png" alt="Icon 5">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-text">Доставка питьевой воды от 4 кубов</h3>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="service-card service-card-lower">
+                    <div class="service-icon">
+                        <img src="image/icon6.png" alt="Icon 6">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-text">Другие услуги</h3>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="container">
+        <div class="about-section">
+            <div class="content-wrapper">
+                 <div class="image-container">
+                     <img src="image/img main.png" alt="НикСити">
+                 </div>
+                 <div class="text-container">
+                     <h1>О нас</h1>
+                     <p>
+                         Компания «НикСити» уже 15 лет успешно занимается продажей, арендой и обслуживанием мобильных туалетных и душевых кабин, занимая лидирующие позиции на данном рынке услуг. У нас также можно купить контейнеры, бочки и другие изделия из пластика, почтовые ящики в готовом виде или индивидуально под заказ.
+                     </p>
+                     <p>
+                         «НикСити» предоставляет не только большой выбор товаров, но и осуществляет доставку по всей России. Главный офис и склад находятся в г. Иркутске, и в его пределах компания осуществляет ряд услуг по обслуживанию туалетных кабин, мойке фасадов, разморозке труб и др.
+                     </p>
+                     <a href="#" class="more-button">Подробнее <span class="arrow"></span></a>
+                 </div>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="advantages-section">
+            <h2 class="section-advantages">Наши преимущества</h2>
+            <div class="advantages-background">
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/checkmark.png" alt="Наличие на складе"></div>
+                        <h3 class="advantage-text">Наличие на складе</h3>
+                        <p>Постоянное наличие товара на складе</p>
+                        <div class="divider"></div>
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/process.png" alt="Полный цикл"></div>
+                        <h3 class="advantage-text">Полный цикл</h3>
+                        <p>Продажа, аренда и обслуживание мобильных туалетных кабин</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/search.png" alt="Контроль"></div>
+                        <h3 class="advantage-text">Контроль</h3>
+                        <p>Собственный контроль качества товара</p>
+                        <div class="divider"></div>
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/rocket.png" alt="Скорость"></div>
+                        <h3 class="advantage-text">Скорость</h3>
+                        <p>Быстрое реагирование. Оперативная консультация. Обработка заявки до 1 часа</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/globe.png" alt="Логистика"></div>
+                        <h3 class="advantage-text">Логистика</h3>
+                        <p>Отлаженная логистика по всем регионам РФ</p>
+                        <div class="divider"></div>
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/worker-male.png" alt="Установка"></div>
+                        <h3 class="advantage-text">Установка</h3>
+                        <p>Качественная установка и монтаж опытными бригадами</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/good-quality.png" alt="Качество"></div>
+                        <h3 class="advantage-text">Качество</h3>
+                        <p>Только надежная продукция от проверенных брендов</p>
+                        <div class="divider"></div>
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/50/1D9A16/security-shield-green.png" alt="Доверие"></div>
+                        <h3 class="advantage-text">Доверие</h3>
+                        <p>Нас выбирают более 1500 тыс. покупателей в год</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-width-container">
+        <div class="manufacturers-section">
+            <h2 class="section-title">Наши производители</h2>
+            <div class="manufacturers-carousel">
+                <button class="carousel-button left-button" onclick="moveLeft()">&lt;</button>
+                <div class="logos-container">
+                    <div class="logos">
+                        <img src="image/Logo gidrokomp.png" alt="Manufacturer 1">
+                        <img src="image/Logo irplast.png" alt="Manufacturer 2">
+                        <img src="image/Logo vostokavtomatika.png" alt="Manufacturer 3">
+                        <img src="image/Logo iplast.png" alt="Manufacturer 4">
+                        <img src="image/Logo polimer.png" alt="Manufacturer 5">
+                    </div>
+                </div>
+                <button class="carousel-button right-button" onclick="moveRight()">&gt;</button>
+            </div>
+        </div>
+    </div>
+    <div class="banner-container">
+        <div class="banner">
+            <div class="form-content">
+                <div class="iconca">
+                    <img src="image/Icon document.png" alt="Icon" class="form-icon">
+                </div>
+                <div class="text-content">
+                    <h2>Запросить<br> прайс-лист</h2>
+                    <p>Мы вышлем документ<br> с ценами в течение 1 часа</p>
+                    <a href="#" class="request-button">Заказать прайс →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="content">
+        <div class="image-container-form">
+            <img src="image/Bg2.png" alt="Background Image" class="background-image">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="iconca">
+                        <img src="image/Icon document.png" alt="Icon" class="form-icon"> <!-- Применение класса form-icon -->
+                    </div>
+                    <div class="text-content">
+                        <h2>Запросить<br> прайс-лист</h2>
+                        <p>Мы вышлем документ<br> с ценами в течение 1 часа</p>
+                        <a href="#" class="request-button">Заказать прайс →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <br><br><br>
+    <div class="footer-container">
+        <!-- Левый блок (лого и меню) -->
+        <div class="footer-block left">
+            <img src="image/Logo (3).png" alt="Логотип" class="footer-logo">
+            <div class="menu-columns">
+                <ul>
+                    <li><span class="diamond">&#9670;</span><a href="#">Каталог</a></li>
+                    <li><span class="diamond">&#9670;</span><a href="#">Услуги</a></li>
+                    <li><span class="diamond">&#9670;</span><a href="#">О компании</a></li>
+                    <li><span class="diamond">&#9670;</span><a href="#">Контакты</a></li>
+                </ul>
+                <ul>
+                    <li><span class="diamond">&#9670;</span><a href="#">Отзывы</a></li>
+                    <li><span class="diamond">&#9670;</span><a href="#">Доставка и оплата</a></li>
+                    <li><span class="diamond">&#9670;</span><a href="#">Клиентам</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Центральный блок (тексты) -->
+        <div class="footer-block center">
+            <div class="info-columns">
+                <div class="info-item-footer">
+                    <p>ООО "НикСити"</p>
+                    <p>ИНН 3808215700</p>
+                    <p>КПП 384901001</p>
+                    <p>ОГРН 1103850026411</p>
+                    <p>ОКАТО 25401366000</p>
+                </div>
+                <div class="info-item-footer">
+                    <p>Для получения информации о наличии и стоимости товаров и (или) услуг, обращайтесь к менеджерам с помощью специальной формы связи или по телефону</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Правый блок (номера телефонов и иконки) -->
+        <div class="footer-block right">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="phone-numbers">
+                        <p>+7 (3952) 50-37-35</p>
+                        <p>+7 (3952) 20-15-15</p>
+                        <p>+7 (902) 177-79-96</p>
+                    </div>
+                    <div class="contact-icons">
+                        <a href="#"><img src="image/Vector (2).png" alt="Telegram"></a>
+                        <a href="#"><img src="image/Vector (3).png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                <a href="#" class="custom-button">Узнать наличие <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p class="policy"><a href="#">Политика в отношении обработки персональных данных</a></p>
+        <p class="copyright">© 2009-2024 НИКСИТИ.РФ Иркутск, ул. Рабочего Штаба, 15 (1 этаж), оф. 44, E-mail: <a href="mailto:503735@mail.ru">503735@mail.ru</a></p>
+    </div>
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+    
+    <script src="scripts.js"></script>
+    <script src="slider.js"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+/* Общие стили для мобильного меню */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #002b00;
+  padding: 20px;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Отображение мобильного меню */
+.mobile-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Стили для списка в мобильном меню */
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.mobile-menu ul li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: #2FA729;
+}
+/* Стили для разделительной полосы */
+.mobile-menu ul li:last-child {
+  border-bottom: 2px solid #2FA729;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+/* Иконки перед контактной информацией в мобильном меню */
+.mobile-menu .contact a[href^="tel"]::before {
+  content: "\f095"; /* Иконка телефона */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #2FA729;
+}
+
+.mobile-menu .contact a[href^="mailto"]::before {
+  content: "\f0e0"; /* Иконка почты */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #2FA729;
+}
+
+.mobile-menu .contact span:first-of-type::before {
+  content: "\f3c5"; /* Иконка адреса */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #2FA729;
+}
+
+.mobile-menu .contact span:last-of-type::before {
+  content: "\f0d1"; /* Иконка доставки */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #2FA729;
+}
+/* Стили для ссылок в мобильном меню */
+.mobile-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Стили для контактов в мобильном меню */
+.mobile-menu .contact {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.mobile-menu .contact a, .mobile-menu .contact span {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.location i, .delivery i, .phone i, .email i {
+  color: #00af00;
+  margin-right: 10px; /* Отступ справа от иконки */
+  font-size: 1.2rem;
+}
+/* Стили для кнопки закрытия меню */
+.mobile-menu .close {
+  font-size: 30px;
+  cursor: pointer;
+  color: #2FA729;
+  text-align: right;
+}
+
+/* Убедитесь, что шапка отображается в виде строки */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1vw;
+  border-bottom: 2px solid #2FA72966;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* Центрируем логотип */
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 auto; /* Центрирование для горизонтальной оси */
+}
+
+
+/* Кнопка-бургер справа */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Обновляем структуру шапки для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+}
+
+.top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    justify-content: flex-start; /* Логотип слева на мобильных */
+}
+}
+
+/* Скрытие верхней панели и навигации на мобильных устройствах */
+@media screen and (max-width: 768px) {
+  .top-bar {
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .hamburger {
+      display: block;
+      font-size: 30px;
+      color: #000;
+      cursor: pointer;
+  }
+
+  .nav {
+      display: none; /* Скрываем основную навигацию на мобильных */
+  }
+
+  /* Скрываем контакты и информацию на мобильных в верхней панели */
+  .location, .contacts, .delivery {
+      display: none;
+  }
+
+  /* Стили логотипа для мобильных */
+  .logo {
+      flex-grow: 1;
+      text-align: left;
+  }
+}
+
+/* Анимации */
+@keyframes slideIn {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

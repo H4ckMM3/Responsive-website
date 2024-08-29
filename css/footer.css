@@ -1,0 +1,327 @@
+/* Общие стили для футера */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 70px;
+    background-color: #0A200A;
+    color: #fff;
+    flex-wrap: nowrap;
+}
+.footer-block {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-logo {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.menu-columns {
+    display: flex;
+    gap: 50px;
+}
+
+
+.menu-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-columns li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.menu-columns a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.menu-columns a:hover {
+    color: #8BC53F;
+}
+
+.diamond {
+    color: #8BC53F;
+    margin-right: 6px;
+}
+
+/* Центральный блок (тексты) */
+.info-columns {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 200px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info-item p {
+    color: #fff;
+    margin: 5px 0;
+}
+.info-item-footer{
+    flex: 1;
+    min-width: 200px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.info-item-footer p{
+    color: #fff;
+    margin: 5px 0;
+    
+}
+
+/* Правый блок (контакты) */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое по горизонтали */
+    gap: 10px;
+}
+.contact-info {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.phone-numbers p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.phone-numbers a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.phone-numbers a:hover {
+    color: #8BC53F;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contact-icons img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+.contact-icons img:hover {
+    opacity: 0.7;
+}
+
+.custom-button {
+    margin-top: 20px; /* Отступ сверху для кнопки */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0A0A07;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    clip-path: none; /* Убираем клиппинг для кнопки */
+}
+
+.custom-button:hover {
+    background-color: #8BC53F;
+    color: #ffffff;
+}
+.arrow {
+    margin-left: 10px;
+    transition: margin-left 0.3s;
+}
+
+.custom-button:hover .arrow {
+    margin-left: 15px;
+}
+/* Нижний футер */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0A200A;
+    padding: 20px 60px;
+    color: #ffffff;
+}
+
+.footer-bottom p {
+    color: #fff;
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+/* Кнопка вверх */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #8BC53F;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#scrollTopBtn:hover {
+    background-color: #7AB42E;
+}
+/* Адаптивность */
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-block {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icons a {
+        margin-left: 5px;
+    }
+
+    .custom-button {
+        margin-left: 0; /* Сбросить сдвиг кнопки для мобильных устройств */
+        margin-top: 20px;
+    }
+    .info-item-footer p{
+        font-size: 20px;
+    }
+}
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .menu-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 10px;
+        text-align: left;
+    }
+
+    .menu-columns ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-columns li {
+        margin-bottom: 15px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info {
+        order: 1;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .phone-numbers p{
+        font-size: 20px;
+    }
+    .contact-info {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .contact-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .contact-icons img{
+        width: 40px;
+        height: 40px;
+    }
+    .custom-button {
+        order: 3;
+        margin-top: 20px;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+
+.background {
+    background-color: #E7F2E6;
+}
+
+.products-section {
+    background-color: #E7F2E6;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2FA729;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.product-info p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-image {
+    width: 60%; 
+    height: auto;
+    align-self: flex-end;
+    object-fit: contain; 
+}
+
+/* Arrow Style */
+.product-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2FA729;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-arrow::before {
+    content: '\f061'; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .product-info {
+        margin-right: 10px;
+    }
+
+    .product-image {
+        width: 50%; 
+        object-fit: contain; 
+        margin-right: 10px;
+    }
+
+    .product-arrow {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .product-arrow::before {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .products-section {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-image {
+        width: 50%; 
+        height: auto;
+        object-fit: contain; 
+        margin-right: 10px;
+    }
+
+    .product-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .product-arrow::before {
+        font-size: 14px;
+    }
+}

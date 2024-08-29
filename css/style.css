@@ -1,0 +1,201 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* 1rem = 16px */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #F5F5F7;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1920px;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    margin: 0 70px; /* Отступы слева и справа */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при уменьшении экрана */
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.phone i, .email i {
+    color: #00af00;
+    margin-left: 10px; /* Отступ слева от текста до иконки */
+    font-size: 1.2rem;
+}
+
+.location i, .delivery i, .phone i, .email i {
+    color: #00af00;
+    margin-right: 10px; /* Отступ справа от иконки */
+    font-size: 1.2rem;
+}
+.location, .delivery {
+    margin-bottom: 10px; /* Достаточные отступы между строками */
+    line-height: 1.5; /* Увеличенное расстояние между строками */
+}
+.phone, .email {
+    margin-bottom: 10px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contacts a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .slider img {
+        content: url('../image/main_mobile.png'); /* Заменяем изображение на мобильное */
+        height: 300px; /* Высота для слайдера на мобильных устройствах */
+    }
+}
+
+.logo {
+    text-align: center;
+    flex-grow: 1; /* Allows the logo to take up available space */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    max-width: 30vw; /* Увеличиваем максимальную ширину логотипа, можно регулировать */
+    padding: 10px 0;
+    margin-right: 8vw;
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 0.9vw;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 0 10px;
+    padding-right: 20px;
+}
+
+.nav ul li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    background-color: green;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: green;
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        
+        order: -1; /* Moves the logo above the text on small screens */
+        margin-bottom: 10px;
+    }
+    .nav{
+        display: none; /* Hide location and contacts on mobile in the top bar */
+    }
+    .contacts {
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        font-size: 1vw;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+    .left-side, .right-side {
+        align-items: center; /* Центрирование элементов на малых экранах */
+        text-align: center;
+    }
+    
+}   
+
+/* Изменение размеров иконок и текста на малых экранах */
+@media screen and (max-width: 768px) {
+    .phone i, .email i {
+        font-size: 1rem; /* Уменьшение размера иконок */
+    }
+
+    .location, .delivery, .phone, .email {
+        font-size: 0.9rem; /* Уменьшение размера текста */
+    }
+
+    .top-bar {
+        padding: 10px; /* Уменьшение отступов для экономии места */
+    }
+}
